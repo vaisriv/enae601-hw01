@@ -19,7 +19,8 @@ perSystem.devshell.mkShell {
             name = "pyl";
             category = "[python]";
             help = "lsp";
-            command = "ty check --python '$(which python3)' src $@";
+            # command = "ty check --python '$(which python3)' src $@";
+            command = "uvx ruff check src $@";
         }
         ## typst
         {
