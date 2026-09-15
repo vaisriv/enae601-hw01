@@ -32,7 +32,33 @@
     $ vbu(r) dprod dot(vbu(r)) = r dot(r) $ <eqn:2.35a>
 ]
 
-answer
+Beginning with #link(<eqn:2.35a>)[Eq. 2.35a]:
+$ vbu(r) dprod dot(vbu(r)) = r dot(r) $
+
+Note that $r equiv abs(vbu(r))$ and $dot(vbu(r)) equiv vbu(v)$:
+$ vbu(r) dprod vbu(v) = abs(vbu(r)) dot(r) $
+
+Rearrange:
+$ dot(r) = (vbu(r) dprod vbu(v))/abs(vbu(r)) $
+
+Note that $vbu(r)/abs(vbu(r)) equiv vuu(r)$:
+$ (vbu(r) dprod vbu(v))/abs(vbu(r)) = vuu(r) dprod vbu(v) $
+
+From Eq. 2.7:
+$ vuu(u)_r = vbu(r)/r = vbu(r)/abs(vbu(r)) = vuu(r) $
+
+Thus:
+$ dot(r) = vuu(u)_r dprod vbu(v) $
+
+The dot product is commutative, so:
+$ dot(r) = vuu(u)_r dprod vbu(v) = vbu(v) dprod vuu(u)_r $
+
+We now have:
+$ dot(r) = vbu(v) dprod vuu(u)_r quad qed $
+
+// NOTE: needs interpretation
+
+#pagebreak(weak: true)
 
 #prob(title: "2.8", color: black)[
     Show that $vuu(u)_r dprod dv(vuu(u)_r, t) = 0$, where $vuu(u)_r = vbu(r)/r$. Use only the fact that $vuu(u)_r$ is a unit vector. Interpret this result.
