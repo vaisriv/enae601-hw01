@@ -20,18 +20,6 @@ inputs.treefmt-nix.lib.mkWrapper pkgs {
         };
     };
 
-    # latex
-    programs.texfmt.enable = true;
-    settings.formatter = {
-        texfmt = {
-            options = [
-                "--nowrap"
-                "--tabsize"
-                "4"
-            ];
-        };
-    };
-
     # python
     programs = {
         ruff-check.enable = true;
@@ -50,5 +38,11 @@ inputs.treefmt-nix.lib.mkWrapper pkgs {
                 "src/p*.py"
             ];
         };
+    };
+
+    # typst
+    programs.typstyle = {
+        enable = true;
+        indentWidth = 4;
     };
 }
